@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: your-django-app-image  # Replace with your actual Docker image name
+    ports:
+      - "8080:8080"
+    environment:
+      - DEBUG=TRUE
+      - SECRET_KEY="django-insecure-5(6-9cztvle+yg)-0ug*iv*zxzwrui=sth3^@ykyxis4q$752)"
+    command: python manage.py runserver localhost:8080
